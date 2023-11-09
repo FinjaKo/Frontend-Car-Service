@@ -1,3 +1,5 @@
+// Erweiterung JavaScript. Das ist der eigentliche Code.
+
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
