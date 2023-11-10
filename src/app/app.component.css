@@ -1,3 +1,17 @@
 <!--Formatierung -->
 
-h1,h2{color: darkgoldenrod;}
+h1 {
+  color: #f38898;
+text-decoration: underline}
+button {
+  background-color: #fcd9d9;
+  border: 1px solid #ea7889;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #030303;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
