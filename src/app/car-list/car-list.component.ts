@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 })
 
 export class CarListComponent implements OnInit {
-  cars: Car[];
+  cars: Car[] = [];
 
   constructor(private carService: CarService, private router: Router) {
   }

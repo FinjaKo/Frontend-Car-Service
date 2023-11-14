@@ -1,19 +1,20 @@
-/*import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-
-//import { DashboardComponent } from './dashboard/dashboard.component';
-import { CarsComponent } from './cars/cars.component';
-//import { CarsDetailComponent } from './cars-detail/cars-detail.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { CarListComponent } from './car-list/car-list.component';
+import { CreateCarComponent } from './create-car/create-car.component';
+import { UpdateCarComponent } from './update-car/update-car.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  //{ path: 'dashboard', component: DashboardComponent },
-  //{ path: 'detail/:id', component: CarsDetailComponent },
-  { path: 'heroes', component: CarsComponent }
+  {path: 'car', component: CarListComponent},
+  {path: 'create-car', component: CreateCarComponent},
+  {path: '', redirectTo: 'car', pathMatch: 'full'},
+  {path: 'update-car/:fin', component: UpdateCarComponent},
+  {path: 'car-details/:fin', component: CarDetailsComponent}
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}*/
+export class AppRoutingModule { }

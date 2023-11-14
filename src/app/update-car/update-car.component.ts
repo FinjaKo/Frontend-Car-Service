@@ -5,12 +5,12 @@ import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-update-car',
-  templateUrl: './update-car.html',
-  styleUrls: ['./update-car.css']
+  templateUrl: './update-car.component.html',
+  styleUrls: ['./update-car.component.css']
 })
 
 export class UpdateCarComponent implements OnInit {
-  fin: string;
+  fin: string = "";
   car: Car = new Car();
 
   constructor(private carService: CarService, private route: ActivatedRoute, private router: Router) {
@@ -31,6 +31,6 @@ export class UpdateCarComponent implements OnInit {
   }
 
   goToCarList(){
-    this.route.navigate(['/car'])
+    this.router.navigate(['/car']);
   }
 }
