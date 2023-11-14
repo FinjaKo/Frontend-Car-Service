@@ -1,0 +1,26 @@
+<div class = "row">
+  <h2> Employee List</h2>
+</div>
+
+<table class = "table table-striped table-bordered">
+  <thead>
+  <tr>
+    <th> Fin </th>
+    <th> Brand </th>
+    <th> Production Year</th>
+    <th> Electric? </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor = "let car of cars" >
+    <td> {{ car.fin }} </td>
+    <td> {{ car.brand }} </td>
+    <td> {{ car.productionYear }} </td>
+    <td>
+      <button (click) = "updateCar(car.fin)" class = "btn btn-primary"> Update</button>
+      <button (click) = "deleteCar(car.fin)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+      <button (click) = "carDetails(car.fin)" class = "btn btn-primary" style="margin-left: 10px"> View</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
