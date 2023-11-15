@@ -9,7 +9,7 @@ import {CarService} from '../car.service';
   styleUrls: ['./car-details.component.css']
 })
 export class CarDetailsComponent implements OnInit {
-  fin: string = ""
+  fin: string = "";
   car: Car = new Car();
 
   constructor(private route: ActivatedRoute, private carService: CarService) {

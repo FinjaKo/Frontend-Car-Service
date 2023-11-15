@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, /*HttpHeaders*/ } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
@@ -20,7 +20,7 @@ export class CarService {
     return this.http.get<Car[]>(`${this.carsUrl}`);
   }
 
-  createEmployee(car: Car): Observable<Object> {
+  createCar(car: Car): Observable<Object> {
     return this.http.post(`${this.carsUrl}`, car);
   }
 
@@ -28,10 +28,9 @@ export class CarService {
     return this.http.get<Car>(`${this.carsUrl}/${fin}`);
   }
 
-  updateEmployee(fin: string, car: Car): Observable<Object>{
+  updateCar(fin: string, car: Car): Observable<Object>{
     return this.http.put(`${this.carsUrl}/${fin}`, car);
   }
-
 
   deleteCar(fin: string): Observable<Object>{
     return this.http.delete(`${this.carsUrl}/${fin}`);

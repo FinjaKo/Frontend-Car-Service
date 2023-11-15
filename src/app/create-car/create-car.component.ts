@@ -1,3 +1,5 @@
+// noinspection JSDeprecatedSymbols
+
 import {Component, OnInit} from '@angular/core';
 import {Car} from '../car';
 import {CarService} from '../car.service';
@@ -15,11 +17,11 @@ export class CreateCarComponent implements OnInit {
   constructor(private carService: CarService, private router: Router) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   saveCar() {
-    this.carService.createEmployee(this.car).subscribe(data => {
+    this.carService.createCar(this.car).subscribe(data => {
       console.log(data);
       this.goToCarList();
     },

@@ -15,7 +15,7 @@ export class CarListComponent implements OnInit {
   constructor(private carService: CarService, private router: Router) {
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getCars();
   }
 
