@@ -1,6 +1,7 @@
 h1 {
-  color: #f38898;
-  text-decoration: underline}
+  color: #ef677b;
+  text-decoration: underline;
+  font-size: 55px}
 button {
   background-color: #fcd9d9;
   border: 1px solid #ea7889;
@@ -12,4 +13,13 @@ button {
   margin-right: 1rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+}
+
+ul {
+  background-color: #e5b5bc;
+  border: 2px solid #e76b7e;
+}
+
+.custom-nav {
+  background-color: #e08693;
 }

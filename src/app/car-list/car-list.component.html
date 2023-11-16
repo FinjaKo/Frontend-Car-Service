@@ -9,6 +9,7 @@
     <th> Brand</th>
     <th> Production Year</th>
     <th> Electric?</th>
+    <th> Actions</th>
   </tr>
   </thead>
   <tbody>
@@ -16,6 +17,7 @@
     <td> {{ car.fin }} </td>
     <td> {{ car.brand }} </td>
     <td> {{ car.productionYear }} </td>
+    <td> {{ car.electric }}</td>
     <td>
       <button (click)="updateCar(car.fin)" class="btn btn-primary"> Update</button>
       <button (click)="deleteCar(car.fin)" class="btn btn-danger" style="margin-left: 10px"> Delete</button>

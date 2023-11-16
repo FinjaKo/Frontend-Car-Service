@@ -20,13 +20,26 @@ export class CreateCarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  saveCar() {
+ /* saveCar() {
     this.carService.createCar(this.car).subscribe(data => {
       console.log(data);
       this.goToCarList();
     },
       error => console.log(error));
+  }*/
+
+  saveCar() {
+    this.carService.createCar(this.car).subscribe(
+      (createdCar: Car) => {
+        console.log('Created Car:', createdCar);
+        // 'Fin' is now accessible as createdCar.fin
+        this.goToCarList();
+      },
+      error => console.log(error)
+    );
   }
+
+
   goToCarList() {
     this.router.navigate(['/cars']);
   }

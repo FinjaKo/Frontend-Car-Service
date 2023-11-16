@@ -6,7 +6,7 @@ import { UpdateCarComponent } from './update-car/update-car.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
 
 const routes: Routes = [
-  {path: 'car', component: CarListComponent},
+  {path: 'cars', component: CarListComponent},
   {path: 'create-car', component: CreateCarComponent},
   {path: '', redirectTo: 'car', pathMatch: 'full'},
   {path: 'update-car/:fin', component: UpdateCarComponent},

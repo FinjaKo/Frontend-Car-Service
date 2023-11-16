@@ -42,6 +42,7 @@ export class UpdateCarComponent implements OnInit {
       }
       , error => console.log(error));
   }*/
+
   onSubmit() {
     this.carService.updateCar(this.fin, this.car).subscribe(
       data => {
@@ -54,6 +55,6 @@ export class UpdateCarComponent implements OnInit {
   }
 
   goToCarList() {
-    this.router.navigate(['/car']);
+    this.router.navigate(['/cars']);
   }
 }
