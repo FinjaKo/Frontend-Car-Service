@@ -20,13 +20,6 @@ export class CreateCarComponent implements OnInit {
   ngOnInit(): void {
   }
 
- /* saveCar() {
-    this.carService.createCar(this.car).subscribe(data => {
-      console.log(data);
-      this.goToCarList();
-    },
-      error => console.log(error));
-  }*/
 
   saveCar() {
     this.carService.createCar(this.car).subscribe(
@@ -47,4 +40,5 @@ export class CreateCarComponent implements OnInit {
     console.log(this.car);
     this.saveCar();
   }
+
 }

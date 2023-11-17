@@ -1,10 +1,10 @@
 h1 {
-  color: #ef677b;
+  color: #034b62;
   text-decoration: underline;
   font-size: 55px}
 button {
   background-color: #fcd9d9;
-  border: 1px solid #ea7889;
+  border: 1px solid #88b9c9;
   border-radius: 4px;
   cursor: pointer;
   color: #030303;
@@ -17,9 +17,9 @@ button {
 
 ul {
   background-color: #e5b5bc;
-  border: 2px solid #e76b7e;
+  border: 2px solid #ffffff;
 }
 
 .custom-nav {
-  background-color: #e08693;
+  background-color: rgba(113, 153, 166, 0.86);
 }

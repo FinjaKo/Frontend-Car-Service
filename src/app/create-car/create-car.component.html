@@ -27,7 +27,7 @@
             </div>
 
             <br />
-            <button class="btn btn-success" type="submit">Submit</button>
+            <button class="btn btn-success" type="submit" [disabled]="!car.brand || !car.productionYear || !car.electric">Submit</button>
 
           </form>
         </div>

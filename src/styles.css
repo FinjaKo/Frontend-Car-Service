@@ -5,8 +5,8 @@
   position: absolute;
   bottom: 0;
   width:100%;
-  height: 50px;
-  background-color: #e08693;
+  height: 40px;
+  background-color: rgb(136, 185, 201);
   text-align: center;
   color: white;
 }
